@@ -100,7 +100,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M3</version>
 				<configuration>
-                <skipTests>true</skipTests>
+                <excludes>
+				<exclude>**/TestBase*.java</exclude>
                  
 			  <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
