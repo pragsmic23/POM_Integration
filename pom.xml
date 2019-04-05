@@ -33,7 +33,7 @@
       <scope>test</scope>
     </dependency>
   
-  
+  <!-- this is java dependency -->
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
