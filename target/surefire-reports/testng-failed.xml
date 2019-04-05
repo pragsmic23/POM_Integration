@@ -10,6 +10,15 @@
           <include name="initialize"/>
         </methods>
       </class> <!-- tests.NegativeTest -->
+      <class name="tests.FunctionalTest">
+        <methods>
+          <include name="Home"/>
+          <include name="Login"/>
+          <include name="TeardownTest"/>
+          <include name="initialize"/>
+          <include name="RegistrationFails"/>
+        </methods>
+      </class> <!-- tests.FunctionalTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -20,7 +20,8 @@ public class TestBase extends PropertyReader {
 		@BeforeTest
 		public void initialize() throws IOException{
 			
-			String browser = "chrome";
+			String browser = "firefox";
+			
 			if(browser.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			driver = new ChromeDriver();		
@@ -28,7 +29,7 @@ public class TestBase extends PropertyReader {
 			}
 			else if(browser.equals("firefox")) {
 				
-				System.setProperty("webdriver.gecko.driver", "./drivers/chromedriver.exe");
+				System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
 				driver =new FirefoxDriver();
 			}
 			
