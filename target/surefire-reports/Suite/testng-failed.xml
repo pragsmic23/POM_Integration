@@ -3,22 +3,13 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="tests.NegativeTest">
+      <class name="tests.AddToCart">
         <methods>
           <include name="TeardownTest"/>
-          <include name="LoginFail"/>
+          <include name="SearchTheProduct"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- tests.NegativeTest -->
-      <class name="tests.FunctionalTest">
-        <methods>
-          <include name="Home"/>
-          <include name="Login"/>
-          <include name="TeardownTest"/>
-          <include name="initialize"/>
-          <include name="RegistrationFails"/>
-        </methods>
-      </class> <!-- tests.FunctionalTest -->
+      </class> <!-- tests.AddToCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.689 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.647 s <<< FAILURE! - in TestSuite
+SearchTheProduct(tests.AddToCart)  Time elapsed: 0.07 s  <<< FAILURE!
+java.lang.ClassCastException: java.util.ArrayList cannot be cast to org.openqa.selenium.WebElement
+	at tests.AddToCart.SearchTheProduct(AddToCart.java:17)
+

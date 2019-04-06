@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="10" name="Test">
     <classes>
-      <class name="tests.FunctionalTest"/>
+       <class name="tests.FunctionalTest"/>
       <class name="tests.NegativeTest"/>
+     <!--  <class name="tests.AddToCart"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

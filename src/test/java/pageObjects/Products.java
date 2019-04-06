@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,10 +35,32 @@ public class Products {
 		return element ;
 	}
 	
-	
-	public static WebElement Product_Summer(WebDriver driver) {
+	public static List<WebElement> Product_Category_Women(WebDriver driver) {
 		// TODO Auto-generated method stub
-	   element = driver.findElement(By.className("product-name"));
+		List<WebElement> element= driver.findElements(By.xpath(".//div[@id='block_top_menu']/ul/li"));
+		//List<WebElement> shirt = driver.findElements(By.linkText("T-shirts"));
+		//List<WebElement> dresses = driver.findElements(By.linkText("Dresses"));
+		//List<WebElement> Product =new ArrayList<WebElement>();
+        for( WebElement elm : element){
+        	
+        System.out.println(elm.getSize());	
+        
+			/*
+			 * if(elm.getAttribute("href")!=null) {
+			 * 
+			 * //Product.addAll(element); }
+			 */
+               	
+        }
+        
+		return element ;
+
+	}
+
+	
+	public static WebElement Dresses(WebDriver driver) {
+		// TODO Auto-generated method stub
+	   element = driver.findElement(By.linkText("Dresses"));
 		return element ;
 	}
 
