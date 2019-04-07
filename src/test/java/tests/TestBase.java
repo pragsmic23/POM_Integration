@@ -41,7 +41,7 @@ public class TestBase extends PropertyReader {
 			//To maximize browser
 	                driver.manage().window().maximize();
 		        //Implicit wait
-	        	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	        	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			//To open shopping site
 	                driver.get(PropertyReader.ReadProperty("appurl"));
 			
